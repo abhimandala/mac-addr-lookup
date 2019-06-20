@@ -13,7 +13,7 @@ def getCompanyName():
         r = requests.get(url = URL)
         data = r.json()
 	if data['vendorDetails']['companyName']:
-		print ("Mac address: " + sys.argv[1])
+		print ("MAC address: " + sys.argv[1])
 		print("CompanyName : " + data['vendorDetails']['companyName'])
 	else:
 		print("No record found for " + sys.argv[1])
