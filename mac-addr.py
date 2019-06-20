@@ -12,8 +12,11 @@ def getCompanyName():
         URL = "https://api.macaddress.io/v1?apiKey={0}&output=json&search={1}".format(API_KEY,MAC_ADDRESS)
         r = requests.get(url = URL)
         data = r.json()
-
-        print("CompanyName : " + data['vendorDetails']['companyName'])
+	if data['vendorDetails']['companyName']:
+		print ("Mac address: " + sys.argv[1])
+		print("CompanyName : " + data['vendorDetails']['companyName'])
+	else:
+		print("No record found for " + sys.argv[1])
 
 if __name__ == '__main__':
         getCompanyName()
