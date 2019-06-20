@@ -4,7 +4,7 @@ import sys
 
 
 def getCompanyName():
-        API_KEY = "at_iNYbZNQCyHPEF7ATj9IeJmKgDmpxQ"
+        API_KEY = "at_0T55py8cVr5I1UX1A9fhA1cf6iNsq"
 
         print("--- MAC address vendor lookup ---")
         #MAC_ADDRESS = input('Enter MAC ADDRESS ')  #"44:38:39:ff:ef:57"
